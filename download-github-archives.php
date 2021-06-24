@@ -2,9 +2,9 @@ function dgarch($repo=false, $dir=false, $temp=false, $rmarch=true)
 {
   /*
     $repo   -> Repository link
-    $dir    -> Directory to extract archive files
-    $temp   -> Temp dir to store archive
-    $rmarch -> Downloaded archive removing (if setted "true")
+    $dir    -> Folder to extract archive files
+    $temp   -> Temporary folder to store archive (default: false)
+    $rmarch -> Remove downloaded archive after extract (default: true)
   */
   if(!$repo || !$dir) return false;
   if(!$temp) $temp = $_SERVER['DOCUMENT_ROOT']."/temp";
